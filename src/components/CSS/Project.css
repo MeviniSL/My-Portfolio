@@ -1,0 +1,123 @@
+.projects {
+  padding-bottom: 1rem;
+  margin: 70px;
+}
+
+.projects-heading {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 1.05;
+}
+
+/* responsive grid: 1 / 2 / 3 columns */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+/* card: always stack image above content for clear "content under picture" */
+.project-item {
+  display: flex;
+  flex-direction: column; /* image on top, content under */
+  gap: 1rem;
+  align-items: stretch;
+  background: rgba(11,17,32,0.35);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.25);
+  overflow: hidden;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.project-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(2,6,23,0.30);
+}
+
+/* Media (image) - full width, square by default */
+.project-media {
+  width: 100%;
+  display: block;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;          /* keep square ratio, adjust if needed */
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+}
+
+/* Content under the image */
+.project-content {
+  width: 100%;
+  padding: 0 0.25rem;
+  text-align: left;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.project-desc {
+  margin-bottom: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* Tech badges */
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background: #0b1220;
+  color: #d1d5db;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 640px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9; /* wider preview on tablets */
+    height: auto;
+  }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-title {
+    font-size: 1.125rem;
+  }
+}
+
+/* Very small screens: tighten spacing */
+@media (max-width: 420px) {
+  .projects { margin: 30px 12px; }
+  .project-item { padding: 0.75rem; }
+  .project-title { font-size: 1.05rem; }
+}
