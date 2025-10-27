@@ -96,20 +96,20 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <div className="navbar-actions" role="navigation" aria-label="social links">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="nav-icon">
+                    <a href="https://www.linkedin.com/in/mevini-silva-220b51286/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="nav-icon">
                       <FaLinkedin />
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="nav-icon">
+                    <a href="https://github.com/MeviniSL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="nav-icon">
                       <FaGithub />
                     </a>
-                     <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="nav-icon">
+                     <a href="https://www.facebook.com/share/1DuCdUVGcN/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="nav-icon">
                       <FaFacebook />
                     </a>
                   </div>
 
             <motion.a
               variants={childVariants}
-              href="#"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download

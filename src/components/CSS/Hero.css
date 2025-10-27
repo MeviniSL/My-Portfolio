@@ -253,6 +253,7 @@
 .nav-icon {
   color: inherit;
   text-decoration: none;
+  padding-right: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
