@@ -5,7 +5,7 @@ import './CSS/MyJourney.css'
 
 const MyJourney = () => {
   return (
-    <section className="experience-timeline">
+    <section id="journey">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -40 }}

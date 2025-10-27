@@ -104,8 +104,8 @@
 
 .timeline-image {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid rgba(255,255,255,0.04);
