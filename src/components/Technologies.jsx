@@ -47,11 +47,11 @@ const ICONS = [
 
 const Technologies = () => {
   return (
-    <section className="technologies">
+    <section id="technologies">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 0.5 }}
         className="technologies-heading"
       >
         Technologies

@@ -1,6 +1,6 @@
 /* Row marquee (right → left) for technology icons */
 
-.technologies {
+#technologies {
   padding-bottom: 6rem; /* pb-24 equivalent */
 }
 
