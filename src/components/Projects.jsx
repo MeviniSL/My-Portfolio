@@ -5,10 +5,10 @@ import './CSS/Project.css'
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <section id='projects'>
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -40 }}
         transition={{ duration: 0.5 }}
         className='projects-heading'
       >
@@ -40,6 +40,44 @@ const Projects = () => {
               className='project-content'
             >
               <h3 className='project-title'>{project.title}</h3>
+
+
+
+              <div className="project-actions">
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-btn project-btn--github"
+                  >
+                    GitHub
+                  </a>
+                ) : (
+                  <span className="project-btn project-btn--github disabled" aria-hidden="true">
+                    GitHub
+                  </span>
+                )}
+
+                {project.demo ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-btn project-btn--demo"
+                  >
+                    Demo
+                  </a>
+                ) : (
+                  <span className="project-btn project-btn--demo disabled" aria-hidden="true">
+                    Demo
+                  </span>
+                )}
+              </div>
+
+
+
+
               <p className='project-desc'>{project.description}</p>
 
               <div className='project-techs'>
@@ -53,7 +91,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

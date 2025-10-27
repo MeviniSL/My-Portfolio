@@ -1,4 +1,4 @@
-.projects {
+#projects {
   padding-bottom: 1rem;
   margin: 70px;
 }
@@ -46,7 +46,8 @@
 
 .project-image {
   display: block;
-  width: 100%;
+  width: auto;
+  height: auto;
   aspect-ratio: 1 / 1;          /* keep square ratio, adjust if needed */
   object-fit: cover;
   border-radius: 8px;
@@ -120,4 +121,88 @@
   .projects { margin: 30px 12px; }
   .project-item { padding: 0.75rem; }
   .project-title { font-size: 1.05rem; }
+}
+
+/* Action buttons under project title */
+.project-actions {
+  display: flex;
+  gap: 1rem;                /* increased gap between GitHub and Demo */
+  align-items: center;
+  margin: 0.5rem 0 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;              /* icon/text gap inside button */
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  pointer-events: auto;     /* ensure hover receives pointer events */
+  z-index: 2;               /* place above any overlapping elements */
+}
+
+/* GitHub button (solid / darker) */
+.project-btn--github {
+  background: rgba(11,17,32,0.6);
+  color: #e6e6e6;
+  border-color: rgba(255,255,255,0.04);
+}
+
+/* Demo button (accent outline) */
+.project-btn--demo {
+  background: transparent;
+  color: #06b6d4;
+  border-color: rgba(6,182,212,0.18);
+}
+
+/* Hover / focus states (box hover for clarity) */
+.project-actions .project-btn:hover,
+.project-actions .project-btn:focus,
+.project-actions .project-btn:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(2,6,23,0.2);
+  outline: none;
+}
+
+/* Specific hover visuals */
+.project-btn--github:hover {
+  background: rgba(6,182,212,0.08);
+  color: #e6e6e6;
+  border-color: rgba(6,182,212,0.18);
+}
+
+.project-btn--demo:hover {
+  background: rgba(6,182,212,0.12);
+  color: #ffffff;
+  border-color: rgba(6,182,212,0.3);
+}
+
+/* Disabled / placeholder look when link missing */
+.project-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Mobile: stack buttons full-width for tap targets */
+@media (max-width: 640px) {
+  .project-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .project-btn {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+  }
 }
