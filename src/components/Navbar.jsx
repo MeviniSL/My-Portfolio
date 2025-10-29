@@ -9,8 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <a href="/" aria-label="Home" onClick={() => setOpen(false)}>
-          {/* remove width/height so CSS controls size */}
-          <img src={logo} alt="logo" className="navbar-logo" />
+          <h2 >Mevini</h2>
         </a>
       </div>
 

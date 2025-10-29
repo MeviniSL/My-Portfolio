@@ -12,13 +12,10 @@
 }
 
 /* Logo sizing — larger and responsive */
-.navbar-logo {
+.navbar-brand h2 {
   display: block;
-  margin: 0;
-  width: 300px;
-  max-width: 80%;
-  height: 80px;
-  object-fit: contain;
+  font-size: 1.2rem;
+  
 }
 
 /* Navigation links container (desktop) */

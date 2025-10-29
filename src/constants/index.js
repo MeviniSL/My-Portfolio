@@ -54,46 +54,58 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "StreetSoul E-Commerce Website",
+    github:"https://github.com/MeviniSL/E--commerce",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_mern-webdevelopment-ecommerce-activity-7387194451653267456-2B4D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Built a Laptop Price Prediction System to estimate laptop prices based on specifications. Applied Linear Regression, Decision Tree, and Random Forest algorithms for model comparison. Gained practical experience in data analysis and machine learning.",
+    technologies: ["Python", "NumPy", "Pandas", "scikit-learn", "Jupyter Notebook"],
   },
   {
-    title: "E-Commerce Website",
+    title: "Laptop Price Predictor",
     image: project2,
+    github:"https://github.com/MeviniSL/Laptop-Price-Predictor",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_firstmlproject-machinelearning-python-activity-7366498551801044993-tegl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "Built a Laptop Price Prediction System as my first Machine Learning project, predicting laptop prices based on specifications. Applied Linear Regression, Decision Tree, and Random Forest algorithms while using Python with NumPy and Pandas for data handling and analysis. Gained hands-on experience in turning data into actionable insights and comparing model performances.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Task Management App",
+    title: "Pizza Restaurant Bill Generator",
     image: project3,
+    github:"https://github.com/MeviniSL/Pizza-restaurant_Bill-Generator",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_java-programming-softwaredevelopment-activity-7235553572640145408-W55R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "created a Pizza Restaurant Bill Generator using Java with a Command User Interface (CUI).It lets users choose different pizza types, add extras like cheese or toppings, and automatically calculates the total bill.This project strengthened my Object-Oriented Programming skills and improved my understanding of user interaction in command-line applications.",
+    technologies: ["Java","OOP"],
   },
   {
-    title: "Portfolio Website",
+    title: "DengueGuard – Smart Dengue Patient Management & Monitoring System",
     image: project4,
+    github:"https://github.com/mayuraabhayasinghe/dengue-patient-management-system-grp4",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_dengueguard-capstoneproject-healthtech-activity-7366508541509029890-0TDm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Contributed to designing and developing a hospital solution to digitize dengue patient monitoring with real-time alerts, secure records, and automated reporting for quicker decisions. Built the frontend interface and developed parts of the backend to ensure seamless data flow and interaction.",
+    technologies: ["React.js", "Bootstrap", "Node.js", "Express.js", "MongoDB","Postman","JWT"],
   },
   {
-    title: "Blogging Platform",
+    title: "News Website",
     image: project5,
+    github:"https://github.com/MeviniSL/News_App",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_react-bootstrap-css-activity-7381328359965802496-5lqq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Built a News App using React, Bootstrap, and CSS to display real-time news updates with a clean and responsive design. This project enhanced my frontend development skills and deepened my understanding of API integration.",
+    technologies: ["React.js", "Bootstrap", "CSS", "NewsAPI"],
   },
   {
-    title: "Blogging Platform",
+    title: "Art Center Booking System",
     image: project6,
+    github:"https://github.com/Piumalhk/Sabra-Music",
+    demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_webdevelopment-laravel-mysql-activity-7377968830645673984-apuM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Contributed to developing a digital booking system for Sabaragamuwa University’s art center to streamline scheduling and replace manual approvals. Designed and built the frontend interface for a smooth and user-friendly experience.",
+    technologies: ["HTML", "CSS", "Javascript", "Laravel(php)", "mySQL","Chart.js"],
   },
 ];
 
