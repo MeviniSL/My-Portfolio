@@ -183,3 +183,55 @@
   .contact-heading { font-size: 2.5rem; }
   .contact-body { text-align: left; padding-left: 2rem; padding-right: 2rem; }
 }
+
+@media (max-width: 600px) {
+  #contact, .contact {
+    padding-top: 1.75rem;
+    padding-bottom: 4rem;
+    margin: 1rem;
+    min-height: auto;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0.75rem auto 0;
+    max-width: 720px;   /* constrain width on mobile */
+    padding-left: 0.75rem; /* reduce heavy left padding */
+    padding-right: 0.75rem;
+    align-items: stretch;
+  }
+
+  .contact-column {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .contact-body {
+    text-align: center; /* center body text on small screens */
+    padding: 0 0.5rem;
+  }
+
+  .contact-heading {
+    font-size: 1.9rem;
+    margin-top: 0.75rem;
+  }
+
+  .contact-sub {
+    padding-top: 1.25rem;
+  }
+
+  .contact-nav {
+    gap: 0.4rem;
+  }
+
+  .social-links,
+  .social-links--row {
+    justify-content: center;
+  }
+
+  .contact-footer {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+  }
+}

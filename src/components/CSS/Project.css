@@ -146,8 +146,8 @@
   transition: background 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
   cursor: pointer;
   border: 1px solid transparent;
-  pointer-events: auto;     /* ensure hover receives pointer events */
-  z-index: 2;               /* place above any overlapping elements */
+  pointer-events: auto;     
+  z-index: 2;              
 }
 
 /* GitHub button (solid / darker) */
@@ -205,4 +205,9 @@
     padding: 0.65rem 0.75rem;
     text-align: center;
   }
-}
+  .project-list { max-width: 720px; gap: 1rem; padding: 0 0.75rem; }
+  .project-item { padding: 1rem; border-radius: 10px; }
+  .project-image { aspect-ratio: 4 / 3; } 
+  
+  
+} 

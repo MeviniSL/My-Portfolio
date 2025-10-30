@@ -32,7 +32,7 @@ const Navbar = () => {
       >
         <li role="none"><a role="menuitem" href="#about" onClick={() => setOpen(false)}>About</a></li>
         <li role="none"><a role="menuitem" href="#technologies" onClick={() => setOpen(false)}>Technologies</a></li>
-        <li role="none"><a role="menuitem" href="#projects" onClick={() => setOpen(false)}>My Projects</a></li>
+        <li role="none"><a role="menuitem" href="#projects" onClick={() => setOpen(false)}>Projects</a></li>
         <li role="none"><a role="menuitem" href="#journey" onClick={() => setOpen(false)}>My Journey</a></li>
         <li role="none"><a role="menuitem" href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
       </ul>

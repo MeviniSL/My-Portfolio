@@ -5,14 +5,7 @@ import './CSS/Contact.css'
 
 const Contact = () => {
   const { address, phoneNo, email, social } = CONTACT || {}
-  /*const [theme, setTheme] = useState(
-    typeof window !== 'undefined' ? localStorage.getItem('theme') || 'dark' : 'dark'
-  )*/
-
-  /*useEffect(() => {
-    document.documentElement.dataset.theme = theme
-    try { localStorage.setItem('theme', theme) } catch (e) {}
-  }, [theme])*/
+ 
 
   return (
     <section id="contact" className="contact">

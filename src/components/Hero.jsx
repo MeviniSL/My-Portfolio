@@ -1,6 +1,7 @@
 // ...existing code...
 import React, { useState, useEffect } from 'react'
 import profilePic from '../assets/Mevini_Silva.webp'
+import resumeFile from '/meviniresume.pdf'
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import './CSS/Hero.css'
@@ -109,10 +110,10 @@ const Hero = () => {
 
             <motion.a
               variants={childVariants}
-              href="/resume.pdf"
+              href={resumeFile}
               target="_blank"
               rel="noopener noreferrer"
-              download
+              download="Mevini_Silva_Resume.pdf" 
               className="hero-btn"
             >
               Download Resume

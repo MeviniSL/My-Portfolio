@@ -277,12 +277,13 @@
   .hero-subtitle { font-size: 1rem; }
   .hero-image { max-width: 320px; }
 }
-nav-icon {
+.nav-icon {
   color: inherit;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right:1rem;
   transition: color .15s ease, transform .12s ease;
 }
 
