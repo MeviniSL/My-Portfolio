@@ -59,8 +59,8 @@ export const PROJECTS = [
     demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_mern-webdevelopment-ecommerce-activity-7387194451653267456-2B4D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     image: project1,
     description:
-      "Built a Laptop Price Prediction System to estimate laptop prices based on specifications. Applied Linear Regression, Decision Tree, and Random Forest algorithms for model comparison. Gained practical experience in data analysis and machine learning.",
-    technologies: ["Python", "NumPy", "Pandas", "scikit-learn", "Jupyter Notebook"],
+      "Designed a modern and responsive shopping platform with secure JWT-based authentication, product filtering, cart management, and an admin panel for order handling. Focused on delivering a seamless user experience while gaining hands-on experience in full-stack development and integration of frontend and backend systems.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB","Express.js","JWT"],
   },
   {
     title: "Laptop Price Predictor",
@@ -69,7 +69,7 @@ export const PROJECTS = [
     demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_firstmlproject-machinelearning-python-activity-7366498551801044993-tegl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
       "Built a Laptop Price Prediction System as my first Machine Learning project, predicting laptop prices based on specifications. Applied Linear Regression, Decision Tree, and Random Forest algorithms while using Python with NumPy and Pandas for data handling and analysis. Gained hands-on experience in turning data into actionable insights and comparing model performances.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Python", "NumPy", "Pandas", "scikit-learn"],
   },
   {
     title: "Pizza Restaurant Bill Generator",
@@ -81,12 +81,12 @@ export const PROJECTS = [
     technologies: ["Java","OOP"],
   },
   {
-    title: "DengueGuard – Smart Dengue Patient Management & Monitoring System",
+    title: "Smart Dengue Management System",
     image: project4,
     github:"https://github.com/mayuraabhayasinghe/dengue-patient-management-system-grp4",
     demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_dengueguard-capstoneproject-healthtech-activity-7366508541509029890-0TDm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "Contributed to designing and developing a hospital solution to digitize dengue patient monitoring with real-time alerts, secure records, and automated reporting for quicker decisions. Built the frontend interface and developed parts of the backend to ensure seamless data flow and interaction.",
+      "Contributed to designing and developing a hospital solution 'Dengueguard' to digitize dengue patient monitoring with real-time alerts, secure records, and automated reporting for quicker decisions. Built the frontend interface and developed parts of the backend to ensure seamless data flow and interaction.",
     technologies: ["React.js", "Bootstrap", "Node.js", "Express.js", "MongoDB","Postman","JWT"],
   },
   {
@@ -94,8 +94,7 @@ export const PROJECTS = [
     image: project5,
     github:"https://github.com/MeviniSL/News_App",
     demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_react-bootstrap-css-activity-7381328359965802496-5lqq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
-    description:
-      "Built a News App using React, Bootstrap, and CSS to display real-time news updates with a clean and responsive design. This project enhanced my frontend development skills and deepened my understanding of API integration.",
+    description:"Built a News App using React, Bootstrap, and CSS to display real-time news updates with a clean and responsive interface. Integrated a live news API to fetch articles by category and implemented features like dynamic routing and loading indicators. This project enhanced my frontend development, API integration, and responsive design skills.",
     technologies: ["React.js", "Bootstrap", "CSS", "NewsAPI"],
   },
   {
@@ -104,7 +103,7 @@ export const PROJECTS = [
     github:"https://github.com/Piumalhk/Sabra-Music",
     demo:"https://www.linkedin.com/posts/mevini-silva-220b51286_webdevelopment-laravel-mysql-activity-7377968830645673984-apuM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWUwPgBQuL85QLoMyH0M1PN9PeMqweji7g",
     description:
-      "Contributed to developing a digital booking system for Sabaragamuwa University’s art center to streamline scheduling and replace manual approvals. Designed and built the frontend interface for a smooth and user-friendly experience.",
+      "Contributed to developing a Digital Booking System for Sabaragamuwa University’s Art Center to streamline scheduling and replace manual approvals. Designed a responsive, user-friendly frontend and worked with the team to integrate booking features, improving overall system efficiency and usability.",
     technologies: ["HTML", "CSS", "Javascript", "Laravel(php)", "mySQL","Chart.js"],
   },
 ];
