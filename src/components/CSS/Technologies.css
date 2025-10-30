@@ -1,0 +1,123 @@
+/* Row marquee (right → left) for technology icons */
+
+#technologies {
+  padding-bottom: 6rem; /* pb-24 equivalent */
+}
+
+.technologies-heading {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 2.25rem; /* ~text-4xl */
+  color: #e6e6e6;
+}
+
+/* marquee wrapper */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1rem;
+  --marquee-duration: 20s; /* decrease = faster */
+}
+
+/* single-track container that will be animated */
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  will-change: transform;
+  /* duplicated content expected (component duplicates ICONS array) */
+  animation: marquee-left linear infinite var(--marquee-duration);
+}
+
+
+
+/* each item (icon container) */
+.marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  
+}
+
+/* per-icon colors */
+.tech-js { color: #f7df1e; }        /* JavaScript (yellow) */
+.tech-python { color: #3776AB; }    /* Python blue */
+.tech-java { color: #007396; }      /* Java */
+.tech-express { color: #000000; }   /* Express (black) */
+.tech-css { color: #2965f1; }       /* CSS3 blue */
+.tech-tailwind { color: #06b6d4; }  /* Tailwind cyan */
+.tech-bootstrap { color: #7952b3; } /* Bootstrap purple */
+.tech-mysql { color: #00758F; }     /* MySQL teal */
+.tech-firebase { color: #FFA611; }  /* Firebase orange */
+.tech-postman { color: #FF6C37; }   /* Postman orange */
+.tech-git { color: #F05032; }       /* Git orange */
+.tech-vscode { color: #007ACC; }    /* VS Code blue */
+.tech-figma { color: #F24E1E; }     /* Figma accent */
+.tech-excel { color: #217346; }     /* Excel green */
+.tech-word { color: #2B579A; }      /* Word blue */
+.tech-ppt { color: #D24726; }       /* PowerPoint orange */
+.tech-powerbi { color: #F2C811; }   /* Power BI yellow (fallback) */
+.tech-flask { color: #000000; }     /* Flask dark */
+.tech-django { color: #092E20; }    /* Django dark green */
+.tech-spring { color: #6DB33F; }    /* Spring Boot green */
+.tech-jupyter { color: #F37626; }   /* Jupyter orange */
+
+
+/* Icon base */
+.tech-icon {
+  font-size: 2.25rem; /* ~36px */
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Hover effect (still works) */
+.marquee-item:hover .tech-icon {
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* If your component uses .technologies-grid / .tech-item keep compatibility */
+.technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Individual colors (match previous Tailwind colors) */
+.tech-react { color: #0891b2; }    /* cyan-400 */
+.tech-next  { color: #000000; }    /* nextjs: use dark */
+.tech-mongo { color: #0ea5a4; }    /* cyan-500-ish */
+.tech-redis { color: #b91c1c; }    /* red-700 */
+.tech-node  { color: #16a34a; }    /* green-500 */
+.tech-postgres { color: #0ea5e9; } /* sky-700-ish */
+
+/* Responsive sizing tweaks */
+@media (min-width: 768px) {
+  .tech-icon { font-size: 3rem; } /* larger icons on tablet */
+  .marquee-item { width: 96px; height: 96px; }
+  .marquee-track { gap: 2rem; }
+  .technologies-grid { gap: 1.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .tech-icon { font-size: 3.5rem; } /* ~56px */
+  .marquee-item { width: 112px; height: 112px; }
+  .technologies-heading { font-size: 2.5rem; }
+}
+
+/* Keyframes: slide left by half the track since content is duplicated */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

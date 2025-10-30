@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo sizing — larger and responsive */
+.navbar-brand h2 {
+  display: block;
+  font-size: 1.2rem;
+  
+}
+
+/* Navigation links container (desktop) */
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+}
+
+/* ensure list items are predictable */
+.nav-links li {
+  list-style: none;
+}
+
+/* Individual link styles — box-aware hover */
+.nav-links a {
+  display: inline-block;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;    /* box padding so hover affects a visible area */
+  border-radius: 8px;         /* rounded box on hover */
+  background: transparent;    /* default */
+  transition: color 160ms ease, transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+}
+
+/* Box hover / focus: change background + color + subtle lift */
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a:focus,
+.navbar .nav-links li a:focus-visible {
+  color: #06b6d4;                             /* accent color on hover */
+  background: rgba(6,182,212,0.06);           /* subtle colored box */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.20);
+  outline: none;
+}
+
+/* Active state for touch devices */
+.navbar .nav-links li a:active {
+  transform: translateY(0);
+  background: rgba(6,182,212,0.05);
+}
+
+/* Burger button for mobile */
+.navbar-burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.burger-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  background: currentColor;
+}
+
+/* Mobile: collapse links into a toggleable panel */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    margin-top: 0.1rem;
+    font-size: 0.95rem;
+    position: absolute;
+    right: 1rem;
+    top: 72px;
+    background: rgba(11,17,32,0.98);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.35);
+    min-width: 160px;
+    z-index: 60;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .navbar-burger {
+    display: block;
+  }
+
+  /* larger tap targets on mobile — full-width boxes */
+  .nav-links a {
+    padding: 0.6rem 0.75rem;
+    width: 100%;
+    border-radius: 6px;
+    text-align: left;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus,
+  .nav-links a:focus-visible {
+    background: rgba(255,255,255,0.03);
+    color: #06b6d4;
+    transform: none; /* avoid lift on mobile */
+    box-shadow: none;
+  }
+}
+
+/* Responsive spacing for wide screens */
+@media (min-width: 1024px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* ensure menu always visible on large screens */
+  .nav-links {
+    display: flex !important;
+  }
+}
