@@ -194,20 +194,46 @@
   box-shadow: none;
 }
 
+/
 /* Mobile: stack buttons full-width for tap targets */
 @media (max-width: 640px) {
+
+  .project-list {
+    width: 100%;
+    max-width: 100%;     /* allows full mobile width */
+    padding: 0 1rem;     /* keep small side spacing */
+    gap: 1.2rem;
+  }
+
+  
+  .project-item {
+    padding: 1rem;
+    border-radius: 10px;
+    flex-direction: column;   /* stack image + content */
+    text-align: center;
+  }
+
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 10px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  
   .project-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.6rem;
   }
+
   .project-btn {
     width: 100%;
-    padding: 0.65rem 0.75rem;
+    padding: 0.7rem 0.75rem;
     text-align: center;
   }
-  .project-list { max-width: 720px; gap: 1rem; padding: 0 0.75rem; }
-  .project-item { padding: 1rem; border-radius: 10px; }
-  .project-image { aspect-ratio: 4 / 3; } 
-  
-  
-} 
+}

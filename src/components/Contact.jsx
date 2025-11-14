@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="contact-column contact-basic">
           <h3 className="contact-sub">Basic Information</h3>
           <p className="contact-line strong">{CONTACT?.name || 'M.D.N Silva'}</p>
-          <p className="contact-line">{CONTACT?.tagline || 'Software Engineer | Web Developer | AI/ML Enthusiast'}</p>
+          <p className="contact-line">{CONTACT?.tagline || 'Software Engineer | Web Developer | Full Stack Developer | Frontend Developer | UI/UX Designer | AI/ML Enthusiast'}</p>
           {address && <p className="contact-line">{address}</p>}
 
           <h3 className="contact-sub">Quick Navigation</h3>
@@ -34,6 +34,8 @@ const Contact = () => {
             <li><a href="#journey">My Journey</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+
+    
         </div>
 
         {/* Column 2 — Contact details & social */}

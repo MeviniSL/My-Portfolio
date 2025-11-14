@@ -28,7 +28,7 @@ const phrases = [
 ]
 
 const HERO_CONTENT =
-  "Passionate about AI and machine learning, I am constantly exploring how data and algorithms can drive smarter solutions. Currently, I’m focusing on web development and software engineering, developing applications that blend performance, usability, and creativity. My goal is to leverage my AI knowledge and programming skills to build meaningful, real-world projects."
+  "Passionate about software engineering, web development, and databases, I am continuously expanding my knowledge in AI and machine learning. I enjoy exploring how intelligent systems, data, and algorithms can create smarter and more efficient solutions. Currently, I’m focused on developing applications that combine performance, usability, and creativity. My goal is to integrate my AI skills with my software development experience to build impactful, real-world projects."
 
 const Hero = () => {
   const [text, setText] = useState('')
